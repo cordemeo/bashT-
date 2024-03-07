@@ -1,5 +1,13 @@
 #!/bin/bash
-
+#с помощью цикла вывести список файлов и директорий из текущего каталога, укажет что есть файл а что директория
 set -e
 
-echo test
+for elem in *; do
+    if [ -f $elem ]; then
+        echo " $elem is a file"
+    elif  [ -d $elem ]; then
+        echo " $elem is a directory" 
+    else   
+        echo "...."
+    fi    
+done        
