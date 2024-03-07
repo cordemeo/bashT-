@@ -2,7 +2,7 @@
 
 set -e
 
-read -p "Enter a path! " directory
+read -p "Enter a path!! " directory
 if [ -d "$directory" ]; then 
     echo "Directory contents: "
     ls $directory
