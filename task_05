@@ -1,5 +1,6 @@
 #!/bin/bash
-
+#подсчитывает оъем диска занимаемого директорией. В качестве директории любая директория системы
 set -e
 
-echo test
+read -p "Enter a path to the directory which size you are interested in: " directory
+du -sh $directory
