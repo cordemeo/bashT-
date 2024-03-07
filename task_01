@@ -1,0 +1,15 @@
+#!/bin/bash
+# Вывести дату, время, список зареганых пользователей, uptime системы 
+# сохранить вывод в файл
+
+#set -e
+curdate=$(date +'%Y-%m-%d')
+curtime=$(date +'%H:%M:%S')
+echo "Date: $curdate" >> sysinfo.txt
+echo "Time: $curtime" >> sysinfo.txt
+echo "Logged users: " >> sysinfo.txt
+who >> sysinfo.txt
+uptime=$(uptime)
+echo "system uptime: " >> sysinfo.txt
+echo "$uptime" >> sysinfo.txt
+
