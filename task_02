@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+read -p "Enter a path! " directory
+if [ -d "$directory" ]; then 
+    echo "Directory contents: "
+    ls $directory
+else
+    echo "Directory $directory does not exist :((("    
+fi

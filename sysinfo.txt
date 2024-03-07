@@ -1,0 +1,8 @@
+
+
+Date: 2024-03-07
+Time: 16:02:24
+Logged users: 
+user     tty7         2024-03-07 10:21 (:0)
+system uptime: 
+ 16:02:24 up  5:42,  1 user,  load average: 0,83, 0,55, 0,36
